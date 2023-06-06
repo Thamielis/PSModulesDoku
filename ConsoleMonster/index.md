@@ -1,10 +1,5 @@
 ---
-layout: default
+layout: toc
 title: "ConsoleMonster"
-toc: true
+toc: no_toc_section
 ---
-
-# Inhalt
-* [New-SpectreImage](New-SpectreImage.md)
-* [New-SpectreRule](New-SpectreRule.md)
-

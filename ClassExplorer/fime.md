@@ -63,6 +63,7 @@ Find-Member GetPowerShell
 # GetPowerShell         Method       public PowerShell GetPowerShell(Dictionary<string, object> va…
 ```
 Find all members in the AppDomain with the name "GetPowerShell"
+
 #### EXAMPLE 2
 ```PowerShell
 [System.IO.Stream] | Find-Member -ParameterType { [anyof[Span[any], Memory[any]]] }
@@ -75,6 +76,7 @@ Find all members in the AppDomain with the name "GetPowerShell"
 # Read                  Method       public virtual int Read(Span<byte> buffer);
 ```
 Find all members that take a `Span<>` or a `Memory<>` as a parameter.
+
 #### EXAMPLE 3
 ```PowerShell
 Find-Member -ParameterCount 0 -GenericParameter { [T[new]] }
@@ -97,7 +99,9 @@ Find-Member -ParameterCount 0 -GenericParameter { [T[new]] }
 # ----                  ----------   ----------
 # AddIfNotAlready       Method       public void AddIfNotAlready<TItem>();
 ```
+
 Find all methods with no parameters and with a generic parameter with the `new` constraint.
+
 #### EXAMPLE 4
 ```PowerShell
 Find-Member Emit -ParameterCount ..1, 7..8, 10..
@@ -127,6 +131,7 @@ Find all methods named `Emit` whose parameter count is any of the following:
 
 
 1. `..1`: Less than or equal to 1 2. `7..8`: Between 7 and 8 inclusive 3. `10..`: Greater than or equal to 10
+
 #### EXAMPLE 5
 ```PowerShell
 Find-Member -ReturnType System.Management.Automation.Language.Ast -Static
@@ -152,6 +157,7 @@ Find-Member -ReturnType System.Management.Automation.Language.Ast -Static
 # ParseInput            Method       public static ScriptBlockAst ParseInput(string input, string …
 ```
 Find all static members in the AppDomain that return any type of AST.
+
 #### EXAMPLE 6
 ```PowerShell
 Find-Member -ParameterType runspace -Virtual
@@ -169,6 +175,7 @@ Find-Member -ParameterType runspace -Virtual
 # RunspaceIsRemote      Method       public abstract bool RunspaceIsRemote(Runspace runspace);
 ```
 Find all virtual members in the AppDomain that take any runspace type as a parameter.
+
 #### EXAMPLE 7
 ```PowerShell
 Find-Member Parse* -ParameterType System.Management.Automation.Language.Token
@@ -182,6 +189,7 @@ Find-Member Parse* -ParameterType System.Management.Automation.Language.Token
 # ParseInput            Method       public static ScriptBlockAst ParseInput(string input, string …
 ```
 Find all members that start with the word Parse and take Token as a parameter. This example also demonstrates how this will even match the element of a type that is both an array and ByRef type.
+
 #### EXAMPLE 8
 ```PowerShell
 [runspace] | Find-Member -Force -Abstract | Find-Member -Not -AccessView Child
@@ -198,6 +206,7 @@ Find all members that start with the word Parse and take Token as a parameter. T
 # InNestedPrompt        Property     internal abstract bool InNestedPrompt { get; }
 ```
 Find all members that are required to be implemented (abstract) but cannot be implemented outside of the origin assembly.
+
 #### EXAMPLE 9
 ```PowerShell
 $members = Find-Member -Force
@@ -206,9 +215,7 @@ $members.Count
 ```
 Find all members in the AppDomain including non-public.
 
-
 ---
-
 
 ### Parameters
 #### **Abstract**
@@ -252,7 +259,7 @@ If specified non-public members will also be matched.
 
 |Type      |Required|Position|PipelineInput|Aliases               |
 |----------|--------|--------|-------------|----------------------|
-|`[Switch]`|false   |named   |False        |IncludeNonPublic<br/>F|
+|`[Switch]`|false   |named   |False        |IncludeNonPublicF|
 
 
 

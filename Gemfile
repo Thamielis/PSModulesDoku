@@ -17,6 +17,7 @@ gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-toc"
+  gem "jekyll-relative-links"
   #gem "jekyll-feed", "~> 0.12"
 end
 
