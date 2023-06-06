@@ -28,10 +28,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  thamielis
 
 # Build settings
-theme: minima
+#theme: minima
+theme: modernist
 plugins:
   - jekyll-toc
-  - jekyll-feed
+  #- jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
