@@ -1,6 +1,6 @@
 ---
 layout: toc
-title: "ClassExplorer"
+title: "HelpOut"
 toc: no_toc_section
 ---
 
