@@ -1,6 +1,6 @@
 ---
 layout: toc
-title: "ClassExplorer"
+title: "MarkdownPrince"
 toc: no_toc_section
 ---
 
