@@ -3,9 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: "Inhalt"
 toc: true
 ---
 
-# Inhalt
-
+[CodeExplorer](CodeExplorer/index.md)
+[ConsoleMonster](ConsoleMonster/index.md)
 
