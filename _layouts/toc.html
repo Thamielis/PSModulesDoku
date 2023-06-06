@@ -35,7 +35,7 @@
             {% assign pages = site.pages | where: "dir", page.dir %}
             {% for page in pages %}
                 {% if page.title != page.dir %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                 {% endif %}
             {% endfor %}
         </section>
