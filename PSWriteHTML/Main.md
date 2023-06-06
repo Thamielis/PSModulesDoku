@@ -29,7 +29,7 @@ New-HTML -TitleText 'My title' -Online -FilePath $PSScriptRoot\Example40-Body.ht
         New-HTMLTabStyle -SlimTabs `
             -BorderBottomStyleActive solid -BorderBottomColorActive LightSkyBlue -BackgroundColorActive none `
             -TextColorActive Black -Align left -BorderRadius 0px -RemoveShadow -TextColor Grey -TextTransform capitalize #-FontSize 10pt
-```
+
 New-HTMLSectionStyle -BorderRadius 0px -HeaderBackGroundColor Grey
         New-HTMLTab -Name 'First Level Tab - Test 1' -IconBrands acquisitions-incorporated {
             New-HTMLTab -Name '2nd Level Tab - Test 4/1' -IconBrands app-store {
@@ -47,6 +47,8 @@ New-HTMLSectionStyle -BorderRadius 0px -HeaderBackGroundColor Grey
         }
     } -BackgroundColor Yellow -Color Red -FontSize 12px #-FontFamily 'Arial'
 }
+```
+
 #### EXAMPLE 2
 ```PowerShell
 New-HTML -TitleText 'This is a test' -FilePath "$PSScriptRoot\Example34_01.html" {
