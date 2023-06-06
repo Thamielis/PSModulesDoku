@@ -18,4 +18,4 @@ toc: no_toc_section
 * [PSEventViewer](PSEventViewer/index.md)
 * [PSTeams](PSTeams/index.md)
 * [PSWriteHTML](PSWriteHTML/index.md)
-* [PSWritePDF](/index.md)
+* [PSWritePDF](PSWritePDF/index.md)
