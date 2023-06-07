@@ -29,7 +29,12 @@ toc: no_toc_section
 * [PSParseHTML](PSParseHTML/index.md)
 * [PSWriteColor](PSWriteColor/index.md)
 * [PSWriteOffice](PSWriteOffice/index.md)
+* [ConfigurationManager](ConfigurationManager/index.md)
 
 # KnowledgeBase
 * [PowerShell](powershell/index.md)
+    - * [Basics](powershell/basics/index.md)
+      - * [Cmdlet finden](powershell/basics/PowerShell%20Cmdlet%20finden%20-%209%20M%C3%B6glichkeiten%20der%20Suche.md)
+      - * [Objekt Analyse](powershell/basics/PowerShell%20Objekt%20Analyse%20-%20Einfach%20in%203%20Schritten%20gezeigt.md)
+      - * [Objekt erweitern](powershell/basics/PowerShell%20Objekt%20erweitern%20-%202%20einfache%20M%C3%B6glichkeiten.md)  
     - * [Klassen](powershell/klassen/index.md)

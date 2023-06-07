@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Powershell v5 Classes & Concepts"
 date:   2016-08-18 21:46:00
 comments: true
