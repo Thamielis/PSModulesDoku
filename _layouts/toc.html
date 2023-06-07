@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    
+
     {% include head-custom.html %}
 </head>
 
@@ -33,6 +33,37 @@
         <section class="section-nav">
             <h1>Inhalt</h1>
             {% assign pages = site.pages | where: "dir", page.dir %}
+            {% assign new_cmdlet = pages | where: "title", "title contains 'New-'" %}
+
+            {% case new_cmdlet %}
+                <h2>New-</h2>
+                {% for page in new_cmdlet %}
+                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endfor %}
+            {% endcase %}
+            
+            <h2>--------</h2>
+            {% for page in pages %}
+                {% if page.title contains 'New-' %}
+                    {% if forloop.first %}
+                        <h2>New-</h2>
+                    {% endif %}
+                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% for page in pages %}
+                {% if page.title contains 'Get-' %}
+                    {% if forloop.first %}
+                        <h2>Get-</h2>
+                    {% endif %}
+                    <li><a href="{{ cmdlet.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+            
+            
+            
+            <h2>All</h2>
             {% for page in pages %}
                 {% if page.title != page.dir %}
                     <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
