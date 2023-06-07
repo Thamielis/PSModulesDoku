@@ -22,7 +22,7 @@ title: PSModulesDoku
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Dokumentationen diverser PowerShell Module
-baseurl: "/psmodulesdoku" # the subpath of your site, e.g. /blog
+baseurl: "/PSModulesDoku" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  thamielis
