@@ -65,8 +65,8 @@
       "path": "[[workspace]]/_posts"
     },
     {
-      "title": "AST",
-      "path": "[[workspace]]/AST"
+      "title": "PSHelp",
+      "path": "[[workspace]]/PSHelp"
     }
   ],
   "frontMatter.git.enabled": true
