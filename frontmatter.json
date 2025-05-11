@@ -53,6 +53,10 @@
     {
       "title": "posts",
       "path": "[[workspace]]/_posts"
+    },
+    {
+      "title": "AST",
+      "path": "[[workspace]]/AST"
     }
   ],
   "frontMatter.git.enabled": true
